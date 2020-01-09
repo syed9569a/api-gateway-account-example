@@ -1,7 +1,9 @@
 package com.syed.accountexample.controller;
 
 import com.syed.accountexample.domain.repository.*;
+import com.amazonaws.xray.spring.aop.XRayEnabled;
 import com.syed.accountexample.domain.*;
+import com.syed.accountexample.service.*;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/account")
 @CrossOrigin(origins = "http://localhost:8080")
+@XRayEnabled
 public class AccountDBController {
 
     private final AccountDBRepository accountDBRepository;

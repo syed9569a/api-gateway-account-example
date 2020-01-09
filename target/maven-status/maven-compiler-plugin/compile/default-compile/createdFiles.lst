@@ -1,4 +1,6 @@
 com/syed/accountexample/domain/AccountDB.class
-com/syed/accountexample/AccountManagement.class
 com/syed/accountexample/domain/repository/AccountDBRepository.class
+com/syed/accountexample/service/XRayConfig.class
+com/syed/accountexample/AccountManagement.class
+com/syed/accountexample/service/XRayInspector.class
 com/syed/accountexample/controller/AccountDBController.class
